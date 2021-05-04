@@ -7,7 +7,7 @@ source_code_url: https://github.com/PerfectoCode/Bitrise_Perfecto_FileUpload
 support_url: https://github.com/PerfectoCode/Bitrise_Perfecto_FileUpload/issues
 website: https://github.com/PerfectoCode/Bitrise_Perfecto_FileUpload
 source:
-  git: https://sreevatsa-ramya:Sreesmrithi123%24@github.com/PerfectoCode/Bitrise_Perfecto_FileUpload.git
+  git: 
   commit: 
 host_os_tags:
   - osx-10.10
