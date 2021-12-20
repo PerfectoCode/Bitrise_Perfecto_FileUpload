@@ -1,6 +1,6 @@
 # Perfecto-upload
 
-For remote device testing on Perfecto. This step allows you to upload an APK/IPA file to Perfecto cloud 
+Upload your IPA or APK builds, or any files to your Perfecto cloud repository for remote testing on real devices
 
 
 ## How to use this Step
