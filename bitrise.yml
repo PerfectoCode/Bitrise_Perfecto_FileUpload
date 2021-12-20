@@ -26,7 +26,7 @@ workflows:
       - path::./:
           title: Perfecto Upload File to Repository Test
           description: |-
-            Uploads an IPA/APK file to Perfecto cloud
+            Uploads any file to Perfecto cloud
             To test this, you need a Perfecto account with a valid access key and an IPA/APK path from which to upload
           run_if: true
           inputs:
