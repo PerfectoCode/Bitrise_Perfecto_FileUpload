@@ -5,7 +5,7 @@ app:
   envs:
     # If you want to share this step into a StepLib
     - BITRISE_STEP_ID: perfecto-upload
-    - BITRISE_STEP_VERSION: "0.0.9"
+    - BITRISE_STEP_VERSION: "0.0.10"
     - BITRISE_STEP_GIT_CLONE_URL: https://github.com/PerfectoCode/Bitrise_Perfecto_FileUpload.git
     - MY_STEPLIB_REPO_FORK_GIT_URL: https://github.com/PerfectoCode/bitrise-steplib
 
@@ -32,8 +32,8 @@ workflows:
           inputs:
             - upload_path: $BITRISE_APK_PATH
             - perfecto_cloudname: $PERFECTO_CLOUD_NAME
-            - perfecto_accesskey: $PERFECTO_ACCESS_KEY
-            - perfecto_filepath: $PERFECTO_FILE_PATH
+            - perfecto_securityToken: $PERFECTO_ACCESS_KEY
+            - perfecto_locator: $PERFECTO_FILE_PATH
       - script:
           inputs:
             - content: |
