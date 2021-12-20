@@ -1,8 +1,8 @@
 title: Perfecto Upload
 summary: |
-  Upload APK/IPA files to Perfecto cloud repository
+  Uploads any file to Perfecto cloud repository
 description: |
-  Upload your build files to Perfecto for remote device testing. Upload your IPA/APK file to Perfecto repository
+  Upload your IPA or APK builds, or any files to your Perfecto cloud repository for remote testing on real devices. To get your Perfecto security token using the Perfecto UI, click your user name in the top right corner of the screen and select My security token.
 source_code_url: https://github.com/PerfectoCode/Bitrise_Perfecto_FileUpload
 support_url: https://github.com/PerfectoCode/Bitrise_Perfecto_FileUpload/issues
 website: https://github.com/PerfectoCode/Bitrise_Perfecto_FileUpload
@@ -21,6 +21,7 @@ project_type_tags:
   - flutter
 type_tags:
   - deploy
+  - test
 toolkit:
   bash:
     entry_file: step.sh
@@ -44,10 +45,10 @@ inputs:
         or $BITRISE\_IPA\_PATH
       title: A Bitrise generated APK or IPA path
     upload_path: $BITRISE_APK_PATH
-  - perfecto_accesskey: 
+  - perfecto_securityToken: 
     opts:
       description: |
-        The security token you use to log into your Perfecto account
+        The security token you use to log into your Perfecto account. To get your Perfecto security token using the Perfecto UI, click your user name in the top right corner of the screen and select My security token. For more details - https://help.perfecto.io/perfecto-help/content/perfecto/automation-testing/generate_security_tokens.htm
       is_required: true
       is_sensitive: true
       summary: Your perfecto access key. 
@@ -59,10 +60,10 @@ inputs:
       is_required: true
       summary: Your perfecto cloud name. Ex - abc.perfectomobile.com
       title: Perfecto cloud name
-  - perfecto_filepath: 
+  - perfecto_locator: 
     opts:
       description: |
-        File path on perfecto cloud repository where it would be stored
+        The locator value used to specify the virtual path to the file in the Perfecto cloud repository. Ex – Public:FunAppB.apk
       is_required: true
       summary: Your perfecto repository path
       title: Perfecto repository path
